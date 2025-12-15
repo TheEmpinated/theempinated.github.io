@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #000000;
+    padding: 60px;
+  }
+
+  .mifoto {
+    display: block;  /* fuerza que la imagen esté en su propia línea */
+    margin-top: 20px; /* espacio arriba de la imagen */
+    max-width: var(--imagen-ancho, 300px);
+    height: auto;
+  }
+  
+  a {
+    display: inline-block; /* asegura que el link no se mezcle raro */
+    margin-top: 5px;
+  }
+  p {
+    color: white;
+  }
+  
+  .resaltado {
+    color: #4CAF50;      /* verde */
+    font-weight: bold;    /* negrita */
+  }
+
+  .rainbow {
+    font-weight: bold;
+    /*font-size: 2rem;*/
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 5s linear infinite;
+  }
+  
+  /* Animación de gradiente */
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  figcaption {
+    color: white; /* cambia el color del texto */
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .social-link {
+  color: white;
+  text-decoration: none; /* quita el subrayado */
+  font-weight: bold;
+}
