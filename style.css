@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background: #000000;
     padding: 60px;
   }
@@ -9,14 +9,17 @@ body {
     margin-top: 20px; /* espacio arriba de la imagen */
     max-width: var(--imagen-ancho, 300px);
     height: auto;
+    margin: 0 auto;
   }
   
   a {
     display: inline-block; /* asegura que el link no se mezcle raro */
     margin-top: 5px;
+    font-size: 20px;
   }
   p {
     color: white;
+    font-size: 20px;
   }
   
   .resaltado {
@@ -24,21 +27,21 @@ body {
     font-weight: bold;    /* negrita */
   }
 
+
   .rainbow {
-    font-weight: bold;
-    /*font-size: 2rem;*/
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-    background-size: 400% 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow 5s linear infinite;
-  }
-  
-  /* Animación de gradiente */
-  @keyframes rainbow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  font-weight: bold;
+  color: red;
+  animation: colorCycle 2s linear infinite;
+}
+
+  @keyframes colorCycle {
+  0%   { color: red; }
+  16%  { color: orange; }
+  33%  { color: yellow; }
+  50%  { color: lime; }
+  66%  { color: cyan; }
+  83%  { color: blue; }
+  100% { color: violet; }
   }
   
   figcaption {
@@ -51,4 +54,37 @@ body {
   color: white;
   text-decoration: none; /* quita el subrayado */
   font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.grande {
+  font-size: 24px; /* o 2rem */
 }
